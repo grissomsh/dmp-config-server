@@ -10,4 +10,4 @@ WORKDIR /app
 
 COPY . /app
 
-CMD[ "mvn", "package"]
+CMD ["mvn", "package"]
