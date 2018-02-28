@@ -1,4 +1,4 @@
-FROM daocloud.io/grissomsh/maven:latest
+FROM daocloud.io/ms_platform/dmp-maven:latest
 
 MAINTAINER Grissom Wang <grissom.wang@daocloud.io>
 
