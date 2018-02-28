@@ -1,13 +1,9 @@
-FROM daocloud.io/grissomsh/maven:latest
+FROM daocloud.io/ms_platform/dmp-maven:latest
 
-MAINTAINER Grissom Wang <grissom.wang@daocloud.io>
+LABEL maintainer="grissom.wang@daocloud.io"
 
-ENV TIME_ZONE Asia/Shanghai
+WORKDIR /project
+ADD . /project
 
-RUN echo "$TIME_ZONE" > /etc/timezone
-
-WORKDIR /app
-
-COPY . /app
-
-CMD ["mvn", "package"]
+RUN mvn install -Dmaven.test.skip=true
+CMD ["mvn"]
