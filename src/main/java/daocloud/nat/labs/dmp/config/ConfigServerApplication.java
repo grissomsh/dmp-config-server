@@ -10,7 +10,6 @@ import com.spring4all.swagger.EnableSwagger2Doc;
 @SpringBootApplication
 @EnableConfigServer
 @EnableDiscoveryClient
-@EnableSwagger2Doc
 public class ConfigServerApplication {
 
 	public static void main(String[] args) {
