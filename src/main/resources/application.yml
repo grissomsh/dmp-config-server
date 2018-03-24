@@ -1,0 +1,18 @@
+eureka:
+  instance:
+    metadata-map:
+      user.name: ${security.user.name}
+      user.password: ${security.user.password}
+management:
+  context-path: /ops
+  port: '8081'
+  security:
+    enabled: 'true'
+    roles: ACTRADMIN
+security:
+  user:
+    name: admin
+    password: dangerous
+spring:
+  application:
+    name: dmp-config-server
